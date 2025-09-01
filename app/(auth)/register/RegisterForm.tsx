@@ -1,71 +1,72 @@
-'use client';
+'use client'
+import heroImage from '@/public/signup.jpg';
+import MultiStepForm from './MultiStepForm';
+import Image from 'next/image';
 
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import Logo from '@/public/sacco.png'
-import Image from "next/image";
-
-export function RegisterForm({
-  className,
-  ...props
-}: React.ComponentProps<"div">) {
+export default function RegisterForm() {
   return (
-    <div className={cn("flex flex-col gap-6", className)} {...props}>
-      <form>
-        <div className="flex flex-col gap-6">
-          <div className="flex flex-col items-center gap-2">
-            <Image src={Logo} alt='logo' width={50} />
-            <h1 className="text-xl font-bold">Welcome to Wekeza</h1>
-            <div className="text-center text-sm">
-              Already have an account?{" "}
-              <a href="/login" className="underline underline-offset-4">
-                Login
-              </a>
+    <div className="min-h-screen flex w-screen">
+      {/* Image (hidden on mobile) */}
+      <div className="hidden lg:flex md:w-1/2 relative">
+        <div className="absolute inset-0 bg-primary/70"></div>
+        <Image 
+          src={heroImage} 
+          alt="Professional financial planning team working together" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 flex items-center justify-center p-12">
+          <div className="text-center text-primary-foreground">
+            <h1 className="text-4xl font-bold mb-6">
+              Build Your Financial Future
+            </h1>
+            <p className="text-xl opacity-90 max-w-md">
+              Join thousands of members who trust our SACCO for secure savings, 
+              affordable loans, and financial growth opportunities.
+            </p>
+            <div className="mt-8 grid grid-cols-3 gap-6 text-center">
+              <div>
+                <div className="text-2xl font-bold">10K+</div>
+                <div className="text-sm opacity-75">Active Members</div>
+              </div>
+              <div>
+                <div className="text-2xl font-bold">$50M+</div>
+                <div className="text-sm opacity-75">Total Savings</div>
+              </div>
+              <div>
+                <div className="text-2xl font-bold">5.2%</div>
+                <div className="text-sm opacity-75">Annual Returns</div>
+              </div>
             </div>
-          </div>
-          <div className="flex flex-col gap-6">
-            <div className="grid gap-3">
-              <Label htmlFor="name">Name</Label>
-              <Input
-                id="name"
-                type="text"
-                placeholder="e.g., John Doe"
-                required
-              />
-            </div>
-            <div className="grid gap-3">
-              <Label htmlFor="email">Email</Label>
-              <Input
-                id="email"
-                type="email"
-                placeholder="email@gmail.com"
-                required
-              />
-            </div>
-            <div className="grid gap-3">
-                  <div className="flex items-center">
-                    <Label htmlFor="password">Password</Label>
-                    <a
-                      href="#"
-                      className="ml-auto text-sm underline-offset-4 hover:underline"
-                    >
-                      Forgot your password?
-                    </a>
-                  </div>
-                  <Input id="password" type="password" required />
-                </div>
-            <Button type="submit" className="w-full">
-              Sign up
-            </Button>
           </div>
         </div>
-      </form>
-      <div className="text-muted-foreground *:[a]:hover:text-primary text-center text-xs text-balance *:[a]:underline *:[a]:underline-offset-4">
-        By clicking continue, you agree to our <a href="#">Terms of Service</a>{" "}
-        and <a href="#">Privacy Policy</a>.
+      </div>
+
+      {/* Right side - Registration Form */}
+      <div className="w-full lg:w-1/2 flex items-center justify-center p-6 bg-background">
+        <div className="w-full max-w-md lg:max-w-auto">
+          {/* Mobile header */}
+          <div className="lg:hidden text-center mb-8">
+            <h1 className="text-3xl font-bold text-foreground mb-2">
+              Join Our SACCO
+            </h1>
+            <p className="text-muted-foreground">
+              Start your journey to financial freedom
+            </p>
+          </div>
+          
+          <MultiStepForm />
+          
+          {/* Footer */}
+          <div className="mt-8 text-center">
+            <p className="text-sm text-muted-foreground">
+              Already have an account?{' '}
+              <a href="/login" className="text-primary hover:underline font-medium">
+                Sign in here
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-  )
+  );
 }
