@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sacco",
-  description: "All your Sacco's needs in one place",
+  title: "Microfin - Fast, Flexible Micro-Loans for Everyone",
+  description: "Get quick access to affordable personal and business loans with Microfin. Apply online, receive fast approval, and manage repayments easily—all from one secure digital platform.",
 };
 
 export default function RootLayout({

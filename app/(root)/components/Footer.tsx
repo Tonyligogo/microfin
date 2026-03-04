@@ -1,20 +1,16 @@
 import Link from 'next/link'
-import Logo from '@/public/sacco.png'
-import { Facebook, Twitter, Linkedin, Instagram, MapPin, Phone, Mail, Heart } from 'lucide-react'
-import Image from 'next/image'
+import { Facebook, Twitter, Linkedin, Instagram, MapPin, Phone, Mail } from 'lucide-react'
 
 const Footer = () => {
   return (
     <footer className="bg-primary px-4 py-16 md:p-16 text-white">
       <div className="max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
           
           <div className="lg:col-span-1">
-            <div className='bg-white size-16 grid place-content-center rounded-xl'>
-            <Image src={Logo} alt='logo' width={50} />            
-            </div>
+            <h1 className='text-white text-4xl font-bold'>Microfin</h1>
             <p className="my-6 leading-relaxed">
-              Empowering savings and credit cooperatives with comprehensive digital solutions for member management, loan processing, and financial growth.
+              We are your go-to source for all your borrowing needs, whether it’s a personal loan, car loan, mortgage, or anything in between. Our mission is to make lending easy and accessible to everyone, regardless of their financial situation.
             </p>
             
             <div className="flex items-center space-x-2">
@@ -38,7 +34,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 mx-auto">
             <h3 className="text-2xl font-bold text-white mb-4">Product</h3>
             <ul className="space-y-3">
               <li>
@@ -63,8 +59,23 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          <div className="lg:col-span-1 mx-auto">
+            <h3 className="text-2xl font-bold text-white mb-4">Company</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="#" className="text-white">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="text-white">
+                  Our Team
+                </Link>
+              </li>
+            </ul>
+          </div>
 
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 mx-auto">
             <h3 className="text-2xl font-semibold text-white mb-4">Contact Us</h3>
             
             <div className="mb-4">
@@ -82,7 +93,7 @@ const Footer = () => {
                 <Phone className="h-4 w-4 text-secondary flex-shrink-0" />
                 <div>
                   <Link href="tel:+254700123456">
-                    +254 740 964 423
+                    +254 740 455 275
                   </Link>
                 </div>
               </div>
@@ -99,7 +110,7 @@ const Footer = () => {
                 <Mail className="h-4 w-4 text-secondary flex-shrink-0" />
                 <div>
                   <Link href="mailto:corbantechnologies@gmail.com" className="hover:text-blue-400 transition-colors duration-200">
-                    corbantechnologies@gmail.com
+                    tonyligogo@gmail.com
                   </Link>
                 </div>
               </div>
@@ -111,15 +122,9 @@ const Footer = () => {
       {/* Bottom Row */}
       <div className="border-t border-gray-400 border-dashed mt-16">
         <div className="max-w-7xl mt-16">
-          <div className="flex flex-col md:flex-row gap-5 justify-between">
-            <div className='flex items-center gap-1'>
-            <p>Proudly Owned By</p>
-            <a href='https://www.corbantechnologies.org/' target="_blank" className='text-secondary'>Corban Technologies</a>
-            </div>
-            <div className='flex flex-col md:flex-row gap-5 md:gap-0 md:items-center'>
-            <p>© 2025. All rights reserved.</p>
-            <p className='flex items-center gap-1'>Made with <Heart fill='#9edd05' className='text-secondary size-5' /> for SACCOs in Africa</p>
-            </div>
+          <div className="text-center">
+            <p>© 2026 Microfin Microfinance. All Rights Reserved.</p>
+            <p className='text-white/50'>Regulated by the Central Bank of Kenya (CBK) guidelines for Non-Deposit Taking Microfinance Institutions.</p>
           </div>
         </div>
       </div>

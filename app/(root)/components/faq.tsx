@@ -12,7 +12,7 @@ const Faq = () => {
          <div>
             <p className="text-primary font-bold">FAQ</p>
             <h3 className="text-primary text-4xl font-bold my-2">Frequently Asked <br /> Questions</h3>
-            <p className="text-primary mb-8">Get answers to common questions about implementing our app in your SACCO. Still have questions? Contact our team for personalized support.</p>
+            <p className="text-primary mb-8">Everything you need to know about our lending process, requirements, and how we help you grow.</p>
             <CustomButton title='Contact Us' href='#' />
         </div>
         <div className="col-span-2 mt-8 md:mt-0">
@@ -23,42 +23,42 @@ const Faq = () => {
       defaultValue="item-1"
     >
       <AccordionItem value="item-1" className="bg-primary-foreground px-4 rounded-xl mb-2">
-        <AccordionTrigger className="font-semibold text-primary text-lg">How long does implementation take?</AccordionTrigger>
+        <AccordionTrigger className="font-semibold text-primary text-lg">How long does the approval process take?</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance text-base">
           <p>
-          Most SACCOs are fully operational within 2-3 weeks. This includes data migration, staff training, and member onboarding.
+          We pride ourselves on speed. Once your application is submitted, our automated system (supported by our Loan Advisor AI) usually provides a decision within 5 to 10 minutes.
           </p>
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2" className="bg-primary-foreground px-4 rounded-xl mb-2">
-        <AccordionTrigger className="font-semibold text-primary text-lg">Is my SACCO&apos;s data secure?</AccordionTrigger>
+        <AccordionTrigger className="font-semibold text-primary text-lg">How much can I borrow for the first time?</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance text-base">
           <p>
-          Yes, we use bank-level security with 256-bit encryption, regular backups, and comply with international data protection standards.
+          First-time borrowers can typically access between KES 5,000 and KES 50,000. As you build a positive repayment history with us, your limit can increase up to KES 500,000.
           </p>
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3" className="bg-primary-foreground px-4 rounded-xl mb-2">
-        <AccordionTrigger className="font-semibold text-primary text-lg">Can I import my existing member data?</AccordionTrigger>
+        <AccordionTrigger className="font-semibold text-primary text-lg">Can I pay back my loan early?</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance text-base">
           <p>
-          Absolutely. We support data import from Excel, CSV, and most common SACCO management systems. Our team assists with the migration.
+          Yes! We encourage early repayment. There are no penalties for paying back ahead of schedule; in fact, it improves your credit score with us for future, larger loans.
           </p>
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-4" className="bg-primary-foreground px-4 rounded-xl mb-2">
-        <AccordionTrigger className="font-semibold text-primary text-lg">Do you support mobile money?</AccordionTrigger>
+        <AccordionTrigger className="font-semibold text-primary text-lg">What happens if I miss a payment?</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance text-base">
           <p>
-          We integrate with major mobile money providers including M-Pesa, Airtel Money, and already making plans to integrate banks.
+          If you anticipate a delay, please contact us immediately. While we do apply late fees as per our terms, we prefer to work with you on a restructured payment plan to keep your account in good standing.
           </p>
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-5" className="bg-primary-foreground px-4 rounded-xl">
-        <AccordionTrigger className="font-semibold text-primary text-lg">Can members use this on their phones?</AccordionTrigger>
+        <AccordionTrigger className="font-semibold text-primary text-lg">Are you a registered financial institution?</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance text-base">
           <p>
-          Yes, our platform is fully mobile-responsive and soon we&apos;ll also offer native mobile apps for iOS and Android.
+            Yes, we are fully licensed and regulated under Kenyan micro-finance laws, ensuring we follow ethical lending practices and transparent interest calculations.
           </p>
         </AccordionContent>
       </AccordionItem>

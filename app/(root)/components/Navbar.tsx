@@ -67,15 +67,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <Image src={Logo} alt='logo' width={60} />
-          </div>
+          <h1 className='text-primary text-4xl font-bold'>Microfin</h1>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {/* Features Mega Menu */}
-              <div className="relative">
+              {/* <div className="relative">
                 <button
                   onClick={toggleMegaMenu}
                   onMouseEnter={() => setIsMegaMenuOpen(true)}
@@ -84,14 +82,14 @@ const Navbar = () => {
                   Features
                   <ChevronDown className={`ml-1 h-4 w-4 transition-transform duration-200 ${isMegaMenuOpen ? 'rotate-180' : ''}`} />
                 </button>
-              </div>
+              </div> */}
 
-              <Link
+              {/* <Link
                 href="/pricing"
                 className="hover:text-secondary px-3 py-2 text-sm font-medium transition-colors duration-200"
               >
                 Pricing
-              </Link>
+              </Link> */}
               
               <Link
                 href="/about"
@@ -112,13 +110,13 @@ const Navbar = () => {
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <Link
-              href="/login"
+              href="#"
               className="hover:text-secondary px-4 py-2 text-sm font-medium transition-colors duration-200"
             >
               Login
             </Link>
             <Link
-              href="/register"
+              href="#"
               className="bg-secondary px-6 py-2 rounded-lg text-sm font-medium hover:bg-primary hover:text-white transition-colors duration-200 "
             >
               Get Started
@@ -128,7 +126,7 @@ const Navbar = () => {
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center gap-2">
           <Link
-              href="/register"
+              href="#"
               className="bg-secondary px-6 py-2 rounded-lg text-sm font-medium hover:bg-primary hover:text-white transition-colors duration-200 "
             >
               Get Started
@@ -158,7 +156,7 @@ const Navbar = () => {
               {/* Features Grid */}
               <div className="col-span-8">
                 <h3 className="text-2xl font-semibold mb-6">
-                  Everything you need to manage your SACCO
+                  Everything you need to know about micro-finance
                 </h3>
                 <div className="grid grid-cols-2 gap-6">
                   {features.map((feature, index) => {
@@ -239,7 +237,7 @@ const Navbar = () => {
         <div className="md:hidden absolute top-full left-0 right-0 bg-white max-h-[calc(100vh-5rem)] overflow-y-auto shadow-lg z-40">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {/* Mobile Features */}
-            <div className="space-y-1">
+            {/* <div className="space-y-1">
               <div className="px-3 py-2 text-sm font-medium border-b border-gray-100 mb-2">
                 Features
               </div>
@@ -262,15 +260,15 @@ const Navbar = () => {
                   </Link>
                 )
               })}
-            </div>
+            </div> */}
 
-            <Link
+            {/* <Link
               href="/pricing"
               className="hover:text-secondary block px-3 py-2 text-sm font-medium transition-colors duration-200"
               onClick={closeMenu}
             >
               Pricing
-            </Link>
+            </Link> */}
             
             <Link
               href="/about"
@@ -292,14 +290,14 @@ const Navbar = () => {
           {/* Mobile CTA Buttons */}
           <div className="px-2 pb-3 border-t border-gray-200 pt-3">
             <Link
-              href="/login"
+              href="#"
               className="text-gray-700 hover:text-secondary block px-3 py-2 text-sm font-medium transition-colors duration-200"
               onClick={closeMenu}
             >
               Login
             </Link>
             <Link
-              href="/register"
+              href="#"
               className="bg-secondary block px-3 py-2 mt-2 rounded-lg text-sm font-medium hover:bg-primary hover:text-white transition-all duration-200 text-center"
               onClick={closeMenu}
             >
