@@ -30,7 +30,7 @@ const loans = [
 
 const HowItWorks = () => {
   return (
-    <div className="bg-primary px-4 py-16 md:p-24 rounded-t-4xl">
+    <div className="bg-primary mx-4 md:mx-0px-4 py-16 md:p-24 rounded-t-4xl">
         <div className='text-center'>
         <p className="text-secondary font-bold">HOW IT WORKS</p>
         <h3 className="flex-1 text-white text-4xl font-semibold my-2 max-w-lg mx-auto">From Application to Approval in Minutes</h3>
