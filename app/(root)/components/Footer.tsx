@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
           
           <div className="lg:col-span-1">
-            <h1 className='text-white text-4xl font-bold'>Microfin</h1>
+            <h1 className='text-white text-4xl font-bold'>Amokahi</h1>
             <p className="my-6 leading-relaxed">
-              We are your go-to source for all your borrowing needs, whether it’s a personal loan, car loan, mortgage, or anything in between. Our mission is to make lending easy and accessible to everyone, regardless of their financial situation.
+              We are your go-to source for all your borrowing needs, whether it&apos;s a personal loan, car loan, mortgage, or anything in between. Our mission is to make lending easy and accessible to everyone, regardless of their financial situation.
             </p>
             
             <div className="flex items-center space-x-2">
@@ -81,10 +81,7 @@ const Footer = () => {
             <div className="mb-4">
               <div className="flex items-start space-x-3 mb-2">
                 <MapPin className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
-                <div>
-                  <p>Nairobi, Kenya</p>
-                  <p>P.O. Box 12345-00100</p>
-                </div>
+                  <p>Nile Road Kanu Office</p>
               </div>
             </div>
 
@@ -92,20 +89,16 @@ const Footer = () => {
               <div className="flex items-center space-x-3 mb-1">
                 <Phone className="h-4 w-4 text-secondary flex-shrink-0" />
                 <div>
-                  <Link href="tel:+254700123456">
-                    +254 740 455 275
+                  <Link href="tel:+254724134495">
+                    +254 724 134 495
                   </Link>
                 </div>
               </div>
-              <div className="ml-7">
-                <Link href="tel:+254701987654">
-                  +254 710 507 872
-                </Link>
-              </div>
+             
             </div>
 
             {/* Email */}
-            <div className="mb-4">
+            {/* <div className="mb-4">
               <div className="flex items-center space-x-3 mb-1">
                 <Mail className="h-4 w-4 text-secondary flex-shrink-0" />
                 <div>
@@ -114,7 +107,7 @@ const Footer = () => {
                   </Link>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -123,8 +116,8 @@ const Footer = () => {
       <div className="border-t border-gray-400 border-dashed mt-16">
         <div className="max-w-7xl mt-16">
           <div className="text-center">
-            <p>© 2026 Microfin Microfinance. All Rights Reserved.</p>
-            <p className='text-white/50'>Regulated by the Central Bank of Kenya (CBK) guidelines for Non-Deposit Taking Microfinance Institutions.</p>
+            <p>© 2026 Amokahi Enterprises. All Rights Reserved.</p>
+            <p className='text-white/50'>Regulated by the Central Bank of Kenya (CBK) guidelines for Non-Deposit Taking Amokahiance Institutions.</p>
           </div>
         </div>
       </div>

@@ -27,16 +27,16 @@ Get access to affordable personal and business loans in minutes.
                     <div className="size-11 bg-secondary rounded-full grid place-content-center">
                     <Rocket className='size-6 text-primary' />
                     </div>
-                    <p className="text-primary font-bold text-2xl">Apply in Minutes</p>
+                    <p className="text-primary font-bold text-2xl">Fast Approval</p>
                 </div>
-                <p className="text-sm mt-2 mb-5">Complete a simple online application and receive instant feedback on your loan eligibility.</p>
+                <p className="text-sm mt-2 mb-5">Get your loan approved quickly, so you can access funds when you need them most.</p>
                 <div className="relative">
                     <div className="absolute top-1/3 bg-secondary/60 backdrop-blur rounded-xl p-4">
                     <div className="flex gap-2 items-center">
                         <Image src={Logo} alt='logo' width={20} />
-                    <p className="font-semibold">Application Submitted 🎉</p>
+                    <p className="font-semibold">Application Approved 🎉</p>
                     </div>
-                    <p className="text-sm">Your loan request is under review.</p>
+                    <p className="text-sm">Ksh 90,000 received from Amokahi Enterprises.</p>
                     </div>
                 <Image src={Person} width={220} alt="person" className="mx-auto" />
                 </div>
@@ -46,16 +46,16 @@ Get access to affordable personal and business loans in minutes.
                     <div className="size-11 bg-primary rounded-full grid place-content-center">
                     <Rocket className='size-6 text-white' />
                     </div>
-                    <p className="text-primary font-bold text-2xl">Fast Approval</p>
+                    <p className="text-primary font-bold text-2xl">Flexible Payments</p>
                 </div>
-                <p className="text-sm mt-2 mb-5">Our streamlined process ensures quick approvals and timely disbursement of funds.</p>
+                <p className="text-sm mt-2 mb-5">Choose a repayment plan that fits your schedule, whether weekly or monthly.</p>
                 <div className="relative">
                     <div className="absolute top-1/3 bg-white/60 backdrop-blur rounded-xl p-4">
                     <div className="flex gap-2 items-center">
                         <Image src={Logo} alt='logo' width={20} />
-                    <p className="font-semibold">Loan Approved ✅</p>
+                    <p className="font-semibold">Choose your repayment plan ✅</p>
                     </div>
-                    <p className="text-sm">Funds will be disbursed shortly.</p>
+                    <p className="text-sm"> Choose between weekly or monthly repayment options.</p>
                     </div>
                 <Image src={Person} width={220} alt="person" className="mx-auto" />
                 </div>
@@ -65,9 +65,9 @@ Get access to affordable personal and business loans in minutes.
                     <div className="size-11 bg-secondary rounded-full grid place-content-center">
                     <Settings className='size-6 text-primary'/>
                     </div>
-                    <p className="text-primary font-bold text-2xl">Flexible Payment</p>
+                    <p className="text-primary font-bold text-2xl">Secure & Confidential</p>
                 </div>
-                <p className="text-sm mt-2 mb-5">Choose a repayment plan that fits your income and track your progress in real-time.</p>
+                <p className="text-sm mt-2 mb-5">Your personal information is handled with the utmost care, ensuring privacy and confidentiality at every step.</p>
                 <Image src={Phone1} width={100} alt="dashboard look" className="absolute bottom-1/5 left-1/5 z-30" />
                 <Image src={Phone2} width={200} alt="dashboard look" className="absolute bottom-0 left-1/2 -translate-x-1/2" />
             </div>

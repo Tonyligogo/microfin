@@ -2,9 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import Logo from '@/public/sacco.png'
 import { Menu, X, ChevronDown, Users, PiggyBank, CreditCard, BarChart3, Smartphone, MessageSquare } from 'lucide-react'
-import Image from 'next/image'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -67,7 +65,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <h1 className='text-primary text-4xl font-bold'>Microfin</h1>
+          <h1 className='text-primary text-4xl font-bold'>Amokahi</h1>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
@@ -91,7 +89,7 @@ const Navbar = () => {
                 Pricing
               </Link> */}
               
-              <Link
+              {/* <Link
                 href="/about"
                 className="hover:text-secondary px-3 py-2 text-sm font-medium transition-colors duration-200"
               >
@@ -103,33 +101,33 @@ const Navbar = () => {
                 className="hover:text-secondary px-3 py-2 text-sm font-medium transition-colors duration-200"
               >
                 Contact
-              </Link>
+              </Link> */}
             </div>
           </div>
 
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link
+            {/* <Link
               href="#"
               className="hover:text-secondary px-4 py-2 text-sm font-medium transition-colors duration-200"
             >
               Login
-            </Link>
+            </Link> */}
             <Link
-              href="#"
+              href="tel:+254724134495"
               className="bg-secondary px-6 py-2 rounded-lg text-sm font-medium hover:bg-primary hover:text-white transition-colors duration-200 "
             >
-              Get Started
+              Call Us: +254 724 134 495
             </Link>
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center gap-2">
           <Link
-              href="#"
+              href="tel:+254724134495"
               className="bg-secondary px-6 py-2 rounded-lg text-sm font-medium hover:bg-primary hover:text-white transition-colors duration-200 "
             >
-              Get Started
+               Call Us: +254 724 134 495
             </Link>
             <button
               onClick={toggleMenu}

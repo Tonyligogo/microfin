@@ -1,5 +1,5 @@
 import CustomButton from '@/components/custom/CustomButton'
-import { Users, PiggyBank, BarChart3, Smartphone, Shield } from 'lucide-react'
+import { Users, PiggyBank, BarChart3, Smartphone } from 'lucide-react'
 import Link from 'next/link'
 
 const Loans = () => {
@@ -59,30 +59,6 @@ const Loans = () => {
                       </Link>
                     )
                   })}
-        </div>
-        <div className='flex flex-col md:flex-row mt-16 justify-between gap-8'>
-            <div className=" flex flex-col md:flex-row md:items-center gap-5 rounded-xl p-6">
-                      <div className="size-14 flex-shrink-0  bg-secondary rounded-full grid place-content-center">
-                      <Shield className="size-8 text-primary" />
-                      </div>
-                      <div>
-                          <p className="leading-none text-primary font-bold text-xl">
-                          Regulated & Reliable
-                          </p>
-                          <p className="pt-2 text-primary">Fully registered and compliant with national micro-finance regulations. Your financial partner you can hold accountable.</p>
-                      </div>
-                    </div>
-            <div className=" flex flex-col md:flex-row md:items-center gap-5 rounded-xl p-6">
-                      <div className="size-14 flex-shrink-0  bg-secondary rounded-full grid place-content-center">
-                      <Shield className="size-8 text-primary" />
-                      </div>
-                      <div>
-                          <p className="leading-none text-primary font-bold text-xl">
-                          Bank-Grade Security
-                          </p>
-                          <p className="pt-2 text-primary">We use 256-bit encryption to ensure your personal data and transactions remain private and protected.</p>
-                      </div>
-                    </div>
         </div>
     </div>
   )

@@ -1,17 +1,17 @@
-import { BarChart3, Phone, PiggyBank, Smartphone } from 'lucide-react'
+import { BarChart3, PiggyBank, Smartphone } from 'lucide-react'
 import React from 'react'
 
 const loans = [
         {
           icon: Smartphone,
-          title: "Apply Online",
-          description: "Fill out our simple 5-minute form from any device.",
+          title: "ID + Collateral item",
+          description: "Bring your ID and the item you want to use as collateral to our office for a quick assessment.",
           href: "#"
         },
         {
           icon: PiggyBank,
           title: "Quick Approval",
-          description: "Our team reviews your request and provides a decision swiftly.",
+          description: "Our team reviews your request and provides a decision in mminutes.",
           href: "#"
         },
         {
@@ -23,7 +23,7 @@ const loans = [
         {
           icon: Smartphone,
           title: "Flexible Repayments",
-          description: "Pay back in easy installments that fit your income flow.",
+          description: "Pay back in weekly or monthly installments.",
           href: "#"
         },
       ]
