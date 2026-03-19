@@ -18,7 +18,7 @@ const Hero = () => {
 Get access to affordable personal and business loans in minutes. 
   Apply online, receive quick approval, and manage repayments easily — 
   all from one secure digital platform.                    </p>
-                <CustomButton title='Get started' href='/register' />
+                <CustomButton title='Get started' href='#' />
             </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 py-16">
