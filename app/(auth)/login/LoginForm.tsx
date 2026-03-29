@@ -4,8 +4,6 @@ import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import Logo from '@/public/sacco.png'
-import Image from "next/image";
 
 export function LoginForm({
   className,
@@ -16,7 +14,6 @@ export function LoginForm({
       <form>
         <div className="flex flex-col gap-6">
           <div className="flex flex-col items-center gap-2">
-            <Image src={Logo} alt='logo' width={50} />
             <h1 className="text-xl font-bold">Welcome to Amokahi</h1>
             <div className="text-center text-sm">
               Don&apos;t have an account?{" "}
