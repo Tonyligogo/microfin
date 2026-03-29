@@ -1,65 +1,91 @@
-import { BarChart3, PiggyBank, Smartphone } from 'lucide-react'
+import { BarChart3, PiggyBank, Smartphone, CheckCircle2 } from 'lucide-react'
 import React from 'react'
 
-const loans = [
-        {
-          icon: Smartphone,
-          title: "ID + Collateral item",
-          description: "Bring your ID and the item you want to use as collateral to our office for a quick assessment.",
-          href: "#"
-        },
-        {
-          icon: PiggyBank,
-          title: "Quick Approval",
-          description: "Our team reviews your request and provides a decision in mminutes.",
-          href: "#"
-        },
-        {
-          icon: BarChart3,
-          title: "Receive Funds",
-          description: "Once approved, money is sent directly to your account.",
-          href: "#"
-        },
-        {
-          icon: Smartphone,
-          title: "Flexible Repayments",
-          description: "Pay back in weekly or monthly installments.",
-          href: "#"
-        },
-      ]
+const steps = [
+  {
+    icon: Smartphone,
+    title: "ID + Collateral",
+    description: "Bring your ID and the item to our office for a quick assessment.",
+    step: "01"
+  },
+  {
+    icon: PiggyBank,
+    title: "Quick Approval",
+    description: "Our team reviews your request and provides a decision in minutes.",
+    step: "02"
+  },
+  {
+    icon: BarChart3,
+    title: "Receive Funds",
+    description: "Once approved, money is sent directly to your M-Pesa or account.",
+    step: "03"
+  },
+  {
+    icon: CheckCircle2,
+    title: "Flexible Repayments",
+    description: "Pay back in weekly or monthly installments that fit your hustle.",
+    step: "04"
+  },
+]
 
 const HowItWorks = () => {
   return (
-    <div className="bg-primary px-4 py-16 md:p-24 md:rounded-t-4xl">
-        <div className='text-center'>
-        <p className="text-secondary font-bold">HOW IT WORKS</p>
-        <h3 className="flex-1 text-white text-4xl font-semibold my-2 max-w-lg mx-auto">From Application to Approval in Minutes</h3>
-        <p className="flex-1 text-white max-w-lg mx-auto">Transparent steps, quick decisions, and flexible repayments designed to move at the speed of your life.</p>
+    <section className="relative bg-[#0c3a30] px-4 py-24 md:px-12 lg:px-24 overflow-hidden">
+      <div className="max-w-7xl mx-auto relative z-10">
+        {/* Header Section */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-20">
+          <div className="max-w-xl">
+            <span className="text-[#d9f99d] text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
+              The Process
+            </span>
+            <h3 className="text-white text-4xl md:text-5xl lg:text-6xl font-medium leading-tight">
+              From Application to <span className="italic font-light text-emerald-200">Approval in Minutes.</span>
+            </h3>
+          </div>
+          <p className="text-emerald-100/80 max-w-sm text-lg font-light">
+            Transparent steps and quick decisions designed to move at the speed of your life.
+          </p>
         </div>
-         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-8 md:mt-24">
-                  {loans.map((loan, index) => {
-                    const IconComponent = loan.icon
-                    return (
-                      <div
-                        key={index}
-                        className="group p-5 rounded-xl text-center"
-                      >
-                        <div className="bg-secondary size-14 mb-5 rounded-full grid place-content-center mx-auto">
-                          <IconComponent className="size-8 text-primary" />
-                        </div>
-                        <div className="ml-4">
-                          <h4 className="text-white text-xl font-bold">
-                            {loan.title}
-                          </h4>
-                          <p className="mt-1 text-white/50">
-                            {loan.description}
-                          </p>
-                        </div>
-                      </div>
-                    )
-                  })}
+
+        {/* Process Steps Grid */}
+        <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+          
+          {/* Connecting Line (Desktop Only) */}
+          <div className="hidden lg:block absolute top-16 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-emerald-400/20 to-transparent" />
+
+          {steps.map((item, index) => {
+            const IconComponent = item.icon
+            return (
+              <div key={index} className="group relative flex flex-col items-start">
+                {/* Icon Container */}
+                <div className="relative mb-8">
+                  <div className="bg-[#d9f99d] size-16 rounded-2xl flex items-center justify-center shadow-[0_0_30px_rgba(217,249,157,0.15)] group-hover:scale-110 transition-transform duration-500 relative z-10">
+                    <IconComponent className="size-8 text-[#0c3a30]" />
+                  </div>
+                  {/* Step Number Badge */}
+                  <span className="absolute -top-3 -right-3 bg-emerald-900 text-[#d9f99d] text-[10px] font-bold px-2 py-1 rounded-md border border-emerald-400/20 z-20">
+                    {item.step}
+                  </span>
+                </div>
+
+                {/* Text Content */}
+                <div className="space-y-3">
+                  <h4 className="text-white text-xl font-bold tracking-tight">
+                    {item.title}
+                  </h4>
+                  <p className="text-emerald-100/70 text-sm leading-relaxed font-light pr-4">
+                    {item.description}
+                  </p>
+                </div>
+
+                {/* Mobile/Tablet Arrow or Accent */}
+                <div className="mt-6 w-8 h-[2px] bg-[#d9f99d]/30 rounded-full lg:hidden" />
+              </div>
+            )
+          })}
         </div>
-    </div>
+      </div>
+    </section>
   )
 }
 

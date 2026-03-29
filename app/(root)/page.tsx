@@ -1,19 +1,25 @@
+import About from "./components/About"
 import Calculator from "./components/Calculator"
+import AmokahiCTA from "./components/CTA"
 import Faq from "./components/faq"
 import Footer from "./components/Footer"
-import Hero from "./components/Hero"
+import WealthlyHero3 from "./components/Hero"
 import HowItWorks from "./components/HowItWorks"
 import Loans from "./components/Loans"
 import Testimonials from "./components/Testimonials"
+import WhyChooseAmokahi from "./components/WhyUs"
 
 const LandingPage = () => {
   return (
     <main>
-        <Hero/>
+        <WealthlyHero3/>
+        <About/>
+        <HowItWorks/>
         <Loans/>
         <Calculator/>
-        <HowItWorks/>
+        <WhyChooseAmokahi/>
         <Testimonials/>
+        <AmokahiCTA/>
         <Faq/>
         <Footer/>
     </main>
