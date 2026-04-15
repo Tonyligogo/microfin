@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
         <div className="text-2xl font-serif font-bold tracking-tight">Amokahi</div>
         
         <a 
-          href="tel:+254724134495"
+          href="tel:+254725116023"
           className="inline-block bg-[#42cdf5] text-[#062d3a] px-7 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-cyan-500/20 hover:brightness-110 transition-all cursor-pointer"
         >
           Contact us

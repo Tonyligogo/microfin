@@ -7,35 +7,35 @@ const loans = [
     icon: PiggyBank,
     title: "Business Loans",
     requirements: ["Cash Flow Analysis", "Business Certificate", "M-Pesa + Bank Statements", "Photos of Business"],
-    href: "tel:+254724134495",
+    href: "tel:+254725116023",
     tag: "Enterprise"
   },
   {
     icon: Users,
     title: "Personal Loans",
     requirements: ["CRB Listing Status", "Original ID", "M-Pesa Statement", "Personal Photos"],
-    href: "tel:+254724134495",
+    href: "tel:+254725116023",
     tag: "Individual"
   },
   {
     icon: Car,
     title: "Logbook Loans",
     requirements: ["Logbook", "Insurance Cover", "Personal Effects"],
-    href: "tel:+254724134495",
+    href: "tel:+254725116023",
     tag: "Asset-Backed"
   },
   {
     icon: Smartphone,
     title: "Micro Loans",
     requirements: ["CRB Listing Status", "M-Pesa History"],
-    href: "tel:+254724134495",
+    href: "tel:+254725116023",
     tag: "Traders"
   },
   {
     icon: Zap,
     title: "Emergency Loans",
     requirements: ["CRB Listing Status"],
-    href: "tel:+254724134495",
+    href: "tel:+254725116023",
     tag: "Urgent"
   },
 ];

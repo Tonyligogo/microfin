@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Facebook, Instagram, MapPin, Phone, MessageCircle } from 'lucide-react'
 
 const Footer = () => {
-  const whatsappNumber = "+254724134495";
+  const whatsappNumber = "+254725116023";
   const whatsappMessage = encodeURIComponent("Hello Amokahi Enterprises, I would like to inquire about a loan.");
 
   return (
@@ -75,7 +75,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="text-white font-medium text-sm">Head Office</p>
-                  <p className="text-cyan-100/50 text-xs mt-1">Nile Road Kanu Office, Nairobi</p>
+                  <p className="text-cyan-100/50 text-xs mt-1">Umoja, Nairobi</p>
                 </div>
               </div>
 
@@ -85,8 +85,8 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="text-white font-medium text-sm">Call or Text</p>
-                  <Link href="tel:+254724134495" className="text-cyan-100/50 text-xs mt-1 hover:text-[#42cdf5] transition-colors">
-                    +254 724 134 495
+                  <Link href="tel:+254725116023" className="text-cyan-100/50 text-xs mt-1 hover:text-[#42cdf5] transition-colors">
+                    +254725116023
                   </Link>
                 </div>
               </div>
