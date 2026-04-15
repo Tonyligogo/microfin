@@ -1,99 +1,97 @@
 import React from 'react';
 import Image from 'next/image';
-import { ArrowUpRight, Award, ShieldCheck, Zap } from 'lucide-react';
-import Amokahi from '@/public/Amokahi.jpeg';
+import { CheckCircle2 } from 'lucide-react';
 
 const About: React.FC = () => {
+  const founders = [
+    {
+      name: "Founder Name One",
+      role: "Managing Director",
+      image: "/Amokahi.jpeg" // Replace with your actual path
+    },
+    {
+      name: "Founder Name Two",
+      role: "Operations Director",
+      image: "/Amokahi2.jpeg" // Replace with your actual path
+    }
+  ];
+
   return (
-    <section className="relative bg-white py-24 px-4 md:px-12 lg:px-24 overflow-hidden">
-      
+    <section className="bg-white py-24 px-4 md:px-12 lg:px-24 selection:bg-[#42cdf5]/30">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        
+        {/* Top Content Section */}
+        <div className="text-center mb-12 lg:mb-24">
+          <span className="text-[#0a90b0] text-sm font-black uppercase tracking-[0.3em] mb-6 block">
+            Our Story
+          </span>
+          <h2 className="text-4xl md:text-7xl text-[#0a4a5e] font-medium tracking-tighter mb-10 leading-[1.1]">
+            Bridging the gap for <br />
+            <span className="italic font-light text-[#42cdf5]">Kenyan Hustlers.</span>
+          </h2>
+          <p className="text-xl text-[#0a4a5e]/70 font-light leading-relaxed mb-12 max-w-3xl mx-auto">
+            Amokahi Enterprises was founded on the belief that access to credit should be fast, fair, and transparent. We understand the rhythm of the local market and the unique challenges faced by traders and individuals alike.
+          </p>
           
-          {/* --- Left Side: Content --- */}
-          <div className="lg:col-span-7 relative z-10">
-            <span className="bg-[#0c3a30] text-[#d9f99d] text-sm font-bold tracking-widest uppercase mb-4 block w-fit py-1 px-4 rounded-xl">
-              About Amokahi Enterprises
-            </span>
+          <div className="flex flex-wrap justify-center gap-6 md:gap-10">
+            {['Regulated & Transparent', 'Fast Documentation', 'Flexible Repayments'].map((item) => (
+              <div key={item} className="flex items-center gap-3">
+                <CheckCircle2 className="size-5 text-[#42cdf5]" />
+                <span className="text-[#0a4a5e] font-bold text-sm uppercase tracking-wider">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
 
-            <h2 className="text-4xl md:text-6xl font-medium text-[#0c3a30] leading-[1.1] mb-8">
-              Empowering Kenyans with <br />
-              <span className="italic font-light text-emerald-600/80">fair and fast</span> micro-loans.
-            </h2>
-
-            <p className="text-[#0c3a30]/70 text-lg md:text-xl font-light leading-relaxed max-w-2xl mb-10">
-              As a founder-led institution, we are committed to democratizing credit access. 
-              We bridge the gap for local entrepreneurs with transparent capital solutions 
-              designed to move at the speed of your hustle.
+        {/* --- Founders Section --- */}
+        <div className="pt-12 lg:pt-24 border-t border-slate-100">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <h3 className="text-3xl md:text-5xl font-medium text-[#0a4a5e] mb-6">
+              The <span className="text-[#42cdf5]">Founders</span>
+            </h3>
+            <p className="text-[#0a4a5e]/60 font-light">
+              Led by a team of dedicated professionals committed to financial inclusion and ethical lending practices in the heart of Nairobi.
             </p>
-
-            {/* Feature Highlights (Mini Stats) */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-10 border-t border-[#0c3a30]/10">
-              <div className="flex items-start gap-3">
-                <Zap className="size-5 text-emerald-600 mt-1" />
-                <div>
-                  <p className="text-xl font-bold text-[#0c3a30]">5 Mins</p>
-                  <p className="text-xs text-[#0c3a30]/50 uppercase font-bold tracking-wider">Fast Approval</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <ShieldCheck className="size-5 text-emerald-600 mt-1" />
-                <div>
-                  <p className="text-xl font-bold text-[#0c3a30]">Transparent</p>
-                  <p className="text-xs text-[#0c3a30]/50 uppercase font-bold tracking-wider">No Hidden Fees</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <Award className="size-5 text-emerald-600 mt-1" />
-                <div>
-                  <p className="text-xl font-bold text-[#0c3a30]">Collateral</p>
-                  <p className="text-xs text-[#0c3a30]/50 uppercase font-bold tracking-wider">Asset-Backed</p>
-                </div>
-              </div>
-            </div>
           </div>
 
-          {/* --- Right Side: Founder Image --- */}
-          <div className="lg:col-span-5 relative">
-            <div className="relative z-10 rounded-[3rem] overflow-hidden aspect-[4/5] border-[12px] border-white shadow-2xl group">
-              <Image 
-                src={Amokahi}
-                alt="Founder of Amokahi Enterprises" 
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-                priority
-              />
-              
-              {/* Floating ID/Verified Badge */}
-              <div className="absolute bottom-6 left-6 bg-white rounded-2xl p-4 shadow-xl flex items-center gap-3 border border-emerald-50">
-                <div className="size-10 rounded-full bg-[#0c3a30] flex items-center justify-center">
-                   <ArrowUpRight className="size-5 text-[#d9f99d]" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {founders.map((founder, index) => (
+              <div key={index} className="group relative">
+                {/* Image Container with Cyan Border Effect */}
+                <div className="relative h-[450px] w-full rounded-[2.5rem] overflow-hidden bg-[#062d3a] transition-transform duration-500 group-hover:scale-[1.02] shadow-xl">
+                  <Image 
+                    src={founder.image} 
+                    alt={founder.name} 
+                    fill 
+                    className="object-cover opacity-90 group-hover:opacity-100 transition-opacity"
+                  />
+                  
+                  {/* Info Overlay */}
+                  <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-[#062d3a] via-[#062d3a]/60 to-transparent">
+                    <h4 className="text-white text-2xl font-bold tracking-tight">{founder.name}</h4>
+                    <p className="text-[#42cdf5] text-sm font-black uppercase tracking-widest mt-1">{founder.role}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-xs font-bold text-[#0c3a30] uppercase tracking-tighter">Our Founder</p>
-                  <p className="text-[10px] text-[#0c3a30]/50">Amokahi Enterprises</p>
-                </div>
-              </div>
-            </div>
 
-            {/* Decorative Background Grid behind image */}
-            <div className="absolute -top-10 -right-10 w-40 h-40 opacity-20 pointer-events-none">
-                <div className="w-full h-full border-t border-r border-[#0c3a30] rounded-tr-[3rem]" />
-            </div>
+                {/* Decorative Background Element */}
+                <div className="absolute -z-10 -bottom-4 -right-4 w-full h-full border-2 border-[#42cdf5]/10 rounded-[2.5rem] group-hover:-bottom-6 group-hover:-right-6 transition-all duration-500" />
+              </div>
+            ))}
           </div>
         </div>
 
-        {/* --- Partners Strip --- */}
-        <div className="mt-24 pt-12 border-t border-[#0c3a30]/10 flex flex-col md:flex-row items-center justify-between gap-8">
-          <span className="text-xs font-bold uppercase tracking-[0.3em] text-[#0c3a30]/40">Trusted Partners</span>
-          <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6 opacity-30 grayscale contrast-125">
-             <span className="text-2xl font-black tracking-tighter">SAFARICOM</span>
-             <span className="text-2xl font-black tracking-tighter">ABSA</span>
-             <span className="text-2xl font-black tracking-tighter">EQUITY</span>
-             <span className="text-2xl font-black tracking-tighter font-serif">KCB</span>
-             <span className="text-2xl font-black tracking-tighter italic underline decoration-emerald-500 underline-offset-4">M-KOPA</span>
+        {/* --- Partners Section --- */}
+        <div className="mt-24 pt-12 border-t border-[#42cdf5]/20 flex flex-col md:flex-row items-center justify-between gap-8">
+          <span className="text-xs font-bold uppercase tracking-[0.3em] text-[#0a4a5e]/30">Trusted Partners</span>
+          <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
+             <span className="text-2xl font-black tracking-tighter text-[#42cdf5]">SAFARICOM</span>
+             <span className="text-2xl font-black tracking-tighter text-[#42cdf5]">CO-OPERATIVE BANK</span>
+             <span className="text-2xl font-black tracking-tighter text-[#42cdf5]">EQUITY</span>
+             <span className="text-2xl font-black tracking-tighter text-[#42cdf5] font-serif">KCB</span>
+             <span className="text-2xl font-black tracking-tighter text-[#42cdf5]">SBM BANK</span>
           </div>
         </div>
+
       </div>
     </section>
   );
