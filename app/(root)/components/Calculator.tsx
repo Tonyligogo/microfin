@@ -71,7 +71,7 @@ const Calculator = () => {
 
           <p className="text-cyan-100/60 text-lg font-light mb-8 max-w-md">
             Transparent micro-lending. Rate:{" "}
-            <strong>{MONTHLY_RATE * 100}% per month</strong>.
+            <strong>30% yearly</strong>.
           </p>
 
           <div className="flex flex-wrap gap-3 mb-8">
