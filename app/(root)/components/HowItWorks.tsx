@@ -44,7 +44,7 @@ const HowItWorks = () => {
     {
       icon: PiggyBank,
       title: "Quick Approval",
-      description: "Our team reviews your specific documentation and provides a decision in minutes.",
+      description: "Our team reviews your specific documentation once provided and provides a decision as soon as possible.",
       step: "02"
     },
     {
@@ -79,7 +79,7 @@ const HowItWorks = () => {
             </span>
             <h3 className="text-white text-4xl md:text-5xl lg:text-6xl font-medium leading-tight">
               From Application to <br />
-              <span className="italic font-light text-[#42cdf5]">Approval in Minutes.</span>
+              <span className="italic font-light text-[#42cdf5]">Approval.</span>
             </h3>
           </div>
           
