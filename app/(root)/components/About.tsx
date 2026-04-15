@@ -12,7 +12,7 @@ const About: React.FC = () => {
     {
       name: "Founder Name Two",
       role: "Operations Director",
-      image: "/Amokahi.jpeg" // Replace with your actual path
+      image: "/Amokahi2.jpeg" // Replace with your actual path
     }
   ];
 
@@ -21,7 +21,7 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         
         {/* Top Content Section */}
-        <div className="text-center mb-24">
+        <div className="text-center mb-12 lg:mb-24">
           <span className="text-[#0a90b0] text-sm font-black uppercase tracking-[0.3em] mb-6 block">
             Our Story
           </span>
@@ -44,10 +44,10 @@ const About: React.FC = () => {
         </div>
 
         {/* --- Founders Section --- */}
-        <div className="pt-24 border-t border-slate-100">
+        <div className="pt-12 lg:pt-24 border-t border-slate-100">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h3 className="text-3xl md:text-5xl font-medium text-[#0a4a5e] mb-6">
-              The <span className="italic font-light text-[#42cdf5]">Founders</span>
+              The <span className="text-[#42cdf5]">Founders</span>
             </h3>
             <p className="text-[#0a4a5e]/60 font-light">
               Led by a team of dedicated professionals committed to financial inclusion and ethical lending practices in the heart of Nairobi.

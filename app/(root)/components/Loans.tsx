@@ -1,12 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
-import { Users, PiggyBank, BarChart3, Smartphone, ArrowUpRight, Car, CheckCircle2, Zap } from 'lucide-react';
+import { Users, PiggyBank, Smartphone, ArrowUpRight, Car, CheckCircle2, Zap } from 'lucide-react';
 
 const loans = [
   {
     icon: PiggyBank,
     title: "Business Loans",
-    requirements: ["Cash Flow Analysis", "Business Certificate", "M-Pesa + Bank Statements", "Photo of Business"],
+    requirements: ["Cash Flow Analysis", "Business Certificate", "M-Pesa + Bank Statements", "Photos of Business"],
     href: "tel:+254724134495",
     tag: "Enterprise"
   },
@@ -20,21 +20,21 @@ const loans = [
   {
     icon: Car,
     title: "Logbook Loans",
-    requirements: ["Original Logbook", "Insurance Cover", "Personal Effects"],
+    requirements: ["Logbook", "Insurance Cover", "Personal Effects"],
     href: "tel:+254724134495",
     tag: "Asset-Backed"
   },
   {
     icon: Smartphone,
     title: "Micro Loans",
-    requirements: ["CRB Listing Status", "M-Pesa History", "Fast Processing"],
+    requirements: ["CRB Listing Status", "M-Pesa History"],
     href: "tel:+254724134495",
     tag: "Traders"
   },
   {
     icon: Zap,
     title: "Emergency Loans",
-    requirements: ["CRB Listing Status", "Instant Approval", "24/7 Availability"],
+    requirements: ["CRB Listing Status"],
     href: "tel:+254724134495",
     tag: "Urgent"
   },
