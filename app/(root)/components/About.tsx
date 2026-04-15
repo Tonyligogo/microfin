@@ -5,13 +5,13 @@ import { CheckCircle2 } from 'lucide-react';
 const About: React.FC = () => {
   const founders = [
     {
-      name: "Founder Name One",
-      role: "Managing Director",
+      name: "Vincent Ameyo",
+      role: "Founder & CEO",
       image: "/Amokahi.jpeg" // Replace with your actual path
     },
     {
-      name: "Founder Name Two",
-      role: "Operations Director",
+      name: "Lydia Bosire",
+      role: "Co-Founder & COO",
       image: "/Amokahi2.jpeg" // Replace with your actual path
     }
   ];
